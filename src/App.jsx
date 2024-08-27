@@ -12,14 +12,6 @@ import {
 } from "react-hotkeys-hook";
 import FocusTrap from "focus-trap-react";
 
-const columnLabels = [
-	"Barcode",
-	"Column 1",
-	"Column 2",
-	"Column 3",
-	"Column 4",
-];
-const rowLabels = ["Row 1", "Row 2"]; // Adjust according to your data
 
 const App = () => {
 	const [data, setData] = useState([]);
@@ -125,7 +117,7 @@ function Product({ product }) {
 			<h4>{product.productName}</h4>
 			<h4>{product.price}</h4>
 
-			{/* <h4>{product.productName}</h4> */}
+			
 			<input
 				type="number"
 				ref={inputNumberRef}
